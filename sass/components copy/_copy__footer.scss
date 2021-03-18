@@ -1,0 +1,23 @@
+.footer > .container {
+  display: flex;
+  align-items: center;
+}
+
+.copyright {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+
+  letter-spacing: 0.2em;
+
+  color: $dark-sec-color;
+}
+
+.footer .social {
+  margin-left: auto;
+}
+
+.footer .social-link {
+  display: block;
+  padding: 56px 0;
+}

@@ -1,0 +1,45 @@
+.services-prices {
+  background-color: $dark-background-color;
+}
+
+.services-prices .section__subheader {
+  margin-bottom: 20px;
+}
+
+.services-prices .section-header {
+  margin-bottom: 44px;
+}
+
+.services-container {
+  display: flex;
+  margin-bottom: 50px;
+}
+
+.services-list {
+  flex-grow: 1;
+  padding: 30px 40px;
+}
+
+.services-list > .item {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.price {
+  margin-left: auto;
+}
+
+.service,
+.price {
+  font-size: 18px;
+  line-height: 1.67;
+
+  letter-spacing: 0.02em;
+
+  color: $dark-sec-color;
+}
+
+.services-prices .button {
+  display: block;
+  margin: 0 auto;
+}

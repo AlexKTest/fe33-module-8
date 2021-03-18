@@ -1,0 +1,117 @@
+.our-masters {
+  background-color: $sec-background-color;
+}
+
+.our-masters .section__subheader {
+  margin-bottom: 20px;
+}
+
+.our-masters .section-header {
+  margin-bottom: 44px;
+}
+
+.masters {
+  display: flex;
+}
+
+.master-item {
+  text-align: center;
+}
+
+.master-item:focus .master-overlay,
+.master-item:hover .master-overlay {
+  transform: translateX(0);
+}
+
+.master-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.master-photo {
+  position: relative;
+  margin-bottom: 30px;
+  overflow: hidden;
+}
+
+.master-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: $dark-add-color;
+  transform: translateX(100%);
+  @include transition(transform);
+}
+
+.master-name {
+  margin-bottom: 8px;
+
+  font-size: 18px;
+  line-height: 1.39;
+  text-align: center;
+  letter-spacing: 0.02em;
+
+  color: $main-color;
+}
+
+.master-position {
+  margin-bottom: 30px;
+
+  font-size: 14px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.02em;
+
+  color: $accent-color;
+}
+
+.master-social {
+  display: flex;
+  justify-content: center;
+}
+
+.master-social > .item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.master-link {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+
+  background-color: $main-background-color;
+  color: $main-color;
+  @include transition;
+}
+
+.master-link:focus,
+.master-link:hover {
+  color: $accent-color;
+}
+
+.master-icon {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+
+/* Barba */
+.barba {
+  background-color: $main-background-color;
+}
+
+.barba .section__subheader {
+  margin-bottom: 44px;
+}
+
+.barba-photos {
+  display: flex;
+}
+
+.barba-photos > .item:not(:last-child) {
+  margin-right: 30px;
+}

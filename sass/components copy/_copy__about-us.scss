@@ -1,0 +1,41 @@
+.about-us {
+  background-color: $main-background-color;
+}
+
+.about-us .container {
+  display: flex;
+}
+
+.about-photos {
+  display: flex;
+  margin-right: 64px;
+}
+
+.about-photos .item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.about-us .section__subheader {
+  margin-bottom: 20px;
+}
+
+.about-us .section-header {
+  margin-bottom: 20px;
+}
+
+.about-us .section__description {
+  margin-bottom: 20px;
+}
+
+.about-us-text {
+  margin-bottom: 40px;
+}
+
+.about-us-text {
+  font-size: 14px;
+  line-height: 1.86;
+
+  letter-spacing: 0.02em;
+
+  color: $sec-color;
+}

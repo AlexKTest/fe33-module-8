@@ -1,0 +1,62 @@
+.header {
+  position: absolute;
+  width: 100%;
+  
+  &__container {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.header__logo {
+  margin-right: 71px;
+}
+
+.header__nav {
+  display: flex;
+}
+
+.header__nav-item:not(:last-child) {
+  margin-right: 40px;
+}
+
+.header__link {
+  position: relative;
+  display: block;
+  padding: 52px 0;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.1em;
+
+  color: $dark-main-color;
+  @include transition;
+
+  &:focus,
+  &:hover {
+    color: $accent-color;
+  }
+
+  &::after {
+    content: "";
+  
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background-color: $accent-color;
+    opacity: 0;
+    @include transition(opacity);
+  }
+  
+  &:focus::after,
+  &:hover::after {
+    opacity: 1;
+  }
+}
+
+.header__tel {
+  margin-left: auto;
+  margin-right: 40px;
+}
